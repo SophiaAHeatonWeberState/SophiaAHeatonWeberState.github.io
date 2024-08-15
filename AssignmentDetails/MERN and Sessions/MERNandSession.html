@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+    <body>
+        <h1>Sophia Heaton</h1>
+        <h2>MERN and Sessions</h2>
+        <h3>Details:</h3>
+        <p>
+        <b>&ensp;Goal:</b>
+        <br>&emsp;To implement all four pieces of MERN in one functioning project. Also use sessions to track a user across pages in preparation for later assignments.
+        <br><b>&ensp;Assignment Overview:</b>
+        <br>&emsp;In a previous assignment, you created a handful of backend routes. Create a set of React frontend pages and components. Use those backend routes to make the website functional.
+        <br><b>&emsp;Backend:</b>
+        <br>&emsp;• Add session tracking information for the two routes handling registration and login. A smart approach here would be to store just the user's id in a req.session.id field. That way you can simply refer to that id throughout other pages.
+        <br>&emsp;• Also add a logout route which destroys the session.
+        <br><b>&emsp;Frontend:</b>
+        <br>&emsp;• An account registration page that accepts a new account profile with a first name, last name, email address, phone number, and password. The email address will act as the username. Duplicate email accounts are not allowed.
+            <br>&emsp;Accounts will have roles, but for now the role should be blank. Accounts will have 0 in savings and 0 in checking when the account is created.
+        <br>&emsp;• If the registration is successful, move to a page which displays an account summary
+        <br>&emsp;• If the registration is not successful, inform the user why
+        <br>&emsp;• A login page for existing accounts. The user will enter an email address and a password. The password will stay plaintext. (In production environments, this login page would be protected with a certificate and likely the password
+            <br>&emsp;hashed in the database.)
+        If the email and password matches the backend, the user is logged in and goes to the account summary pages
+        If the login is not successful, inform the user why
+        <br>&emsp;• A logout page
+        <br>&emsp;Note that in both prior pages, once the user is registered or logs in, the backend will set a session variable indicating they are logged in, and also tracks more information about the user.
+        <br>&emsp;• An account summary page which displays first name, last name, email, phone number.
+        <br>&emsp;• All this information is retrieved in the backend according to info found in the session object.
+        <br>&emsp;• If a user attempts to view this page and isn't logged in (i.e. doesn't have session info in the backend), redirect the user to the login page.
+        <br>&emsp;• A separate page which 1: shows account balances, and also 2: allows the user to deposit or withdraw money from savings or checking. Keep this proof-of-concept for now. If the user wants to deposit a million dollars, let the user
+            <br>&emsp;do so. But a user can't withdraw beyond $0. Upon a successful action, navigate the user back to the account summary page.
+        <br>&emsp;• All this information is retrieved in the backend according to info found in the session object.
+        <br>&emsp;• If a user attempts to view this page and isn't logged in (i.e. doesn't have session info in the backend), redirect the user to the login page.<br>&emsp;• All users should be assigned a bank customer ID number. This number should be simple to remember and later on cannot be a data store key.
+        <h3>Screenshots:</h3>
+        <img src="1.png" style="width:100%;height:750px;"></img>
+        <img src="2.png" style="width:100%;height:750px;"></img>
+        <a href="https://www.loom.com/share/1386a2cb94804f8c827f83b93eab20b5?sid=563f01a1-f6af-42dc-98f8-0865ba4aef3f">Loom Video</a>
+    </body>
+</html>
